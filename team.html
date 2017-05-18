@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+	<!-- link bootstrap here -->
+	<meta name="veiwport" content='width=device-width initial-scale=1'>
+	<meta charset="utf-8">
+	<title>Team page</title>
+
+	<!-- bootstrap cdn -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Shrikhand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+	
+
+</head>
+<body>
+<!-- team member page goes here -->
+					<!--Logo and Navbar -->	
+ 	<nav class="navbar navbar-inverse" style="background-color: ##222222">
+		<div class="container-fluid">
+			<div class="row text-center">
+						<br></br>
+
+  	    <div id="logo" style="margin-bottom: 10px"><img src="assets/images/gears2.gif" style="height:50px;width:50px;"> Work Space</div>
+
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+
+		<ul class="nav nav-tabs">
+		  	<li class="active"><a data-toggle='tab' href="#w-o-issued">Work orders</a></li>
+
+		 	<li><a data-toggle='tab' href="#Resources">Resources</a></li>
+
+		</ul>
+
+		<div class='tab-content'>
+			<div id='w-o-issued' class='tab-pane fade'>
+				<!-- issued work order displayed here  -->
+			
+				
+			</div>
+
+			<div id='Resources' class='tab-pane fade'>
+
+				<div id="tech-page-container">
+					<div id="searchContainer">
+
+						<!-- api search form and display go here -->
+						<h3>YouTube</h3>
+						<input placeholder="  Search YouTube" class="userInput" id="youTube">
+						<br/>
+						 <button class="searchBtn" id="srchYouTube">Search</button>
+								
+						<h3>Stack Exchange</h3>
+						<input placeholder='  Search Stack Exchange' class="userInput" id="stack"> 
+						<br></br>
+						<button class="searchBtn" id="srchStack">Search</button>
+						<div id="srchDisplay"></div>
+						<div id="srchStackDisplay"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<style>
+#srchYouTube {
+	background-color:#ededed;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	margin-top: 20px;
+	border:1px solid #949494;
+	display:inline-block;
+	cursor:pointer;
+	color:#828282;
+	font-family: 'Fugaz One', cursive;
+	font-size:15px;
+	padding:12px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+#srchStack {
+	background-color:#ededed;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #949494;
+	display:inline-block;
+	cursor:pointer;
+	color:#828282;
+	font-family: 'Fugaz One', cursive;
+	font-size:15px;
+	padding:12px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+	margin-bottom: 20px;
+}
+#tech-page-container {
+	background-color:#f8f8f8;
+	height:550px;
+	width:1000px;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	border-radius: 10px;
+	border:2px solid #cccccc;
+}
+#searchContainer {
+	margin-left: 30px;
+}
+.searchBtn:hover {
+	background-color:#ffffff;
+}
+.searchBtn:active {
+	position:relative;
+	top:1px;
+}
+	</style>
+
+	<script type="text/javascript" src='assets/javascript/team.js'></script>
+</body>
+</html>
